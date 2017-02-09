@@ -3,8 +3,15 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+	$(".friend").click(ayeBro);
 })
 
+function ayeBro(e){
+	e.preventDefault();
+	var n = $(this).text();
+	$(this).text(anagrammedName(n));
+	
+}
 /*
  * Function that is called when the document is ready.
  */
